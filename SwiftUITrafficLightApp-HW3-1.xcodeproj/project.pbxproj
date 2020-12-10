@@ -11,6 +11,7 @@
 		E6D472162582599E007C9B03 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D472152582599E007C9B03 /* ContentView.swift */; };
 		E6D47218258259A2007C9B03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6D47217258259A2007C9B03 /* Assets.xcassets */; };
 		E6D4721B258259A2007C9B03 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6D4721A258259A2007C9B03 /* Preview Assets.xcassets */; };
+		E6D4722425825B36007C9B03 /* TrafficEye.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D4722325825B36007C9B03 /* TrafficEye.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		E6D47217258259A2007C9B03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E6D4721A258259A2007C9B03 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E6D4721C258259A2007C9B03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6D4722325825B36007C9B03 /* TrafficEye.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficEye.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				E6D472132582599E007C9B03 /* SwiftUITrafficLightApp_HW3_1App.swift */,
 				E6D472152582599E007C9B03 /* ContentView.swift */,
+				E6D4722325825B36007C9B03 /* TrafficEye.swift */,
 				E6D47217258259A2007C9B03 /* Assets.xcassets */,
 				E6D4721C258259A2007C9B03 /* Info.plist */,
 				E6D47219258259A2007C9B03 /* Preview Content */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6D472162582599E007C9B03 /* ContentView.swift in Sources */,
+				E6D4722425825B36007C9B03 /* TrafficEye.swift in Sources */,
 				E6D472142582599E007C9B03 /* SwiftUITrafficLightApp_HW3_1App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
