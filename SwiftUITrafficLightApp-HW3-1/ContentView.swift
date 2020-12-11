@@ -11,18 +11,18 @@ struct ContentView: View {
     @State var text = "START"
     @State var trafficState = 0
     
-    @State var red = TrafficEye(.red)
-    @State var yellow = TrafficEye(.yellow)
-    @State var green = TrafficEye(.green)
+    @State var red: EyeState = .off
+    @State var yellow: EyeState = .off
+    @State var green: EyeState = .off
     
     var body: some View {
         ZStack {
             Color(.black)
                 .ignoresSafeArea()
             VStack {
-                red
-                yellow
-                green
+                TrafficEye(color: .red, opacity: red.rawValue)
+                TrafficEye(color: .yellow , opacity: yellow.rawValue)
+                TrafficEye(color: .green, opacity: green.rawValue)
                 Spacer()
                 ZStack {
                     Color(.blue)
@@ -51,28 +51,33 @@ struct ContentView: View {
         switch trafficState {
         case 1:
             trafficState = 2
-            red.switchState()
-            yellow.switchState()
+            red = .off
+            yellow = .on
             
         case 2:
             trafficState = 3
-            yellow.switchState()
-            green.switchState()
+            yellow = .off
+            green = .on
             
         case 3:
             trafficState = 1
-            green.switchState()
-            red.switchState()
+            green = .off
+            red = .on
             
         default:
             text = "NEXT"
             trafficState = 1
-            red.switchState()
+            red = .on
         }
         
         
     }
     
+}
+
+enum EyeState: Double {
+    case on = 1
+    case off = 0.3
 }
 
 struct ContentView_Previews: PreviewProvider {
